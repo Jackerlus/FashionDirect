@@ -15,8 +15,14 @@
                     <a href="#!">Sale</a>
                 </li>
                 <li>
+                    <a href="#!">All Products</a>
+                </li>
+                <li>
                     <a href="#!">Clothing</a>
                     <ul class="nav-dropdown">
+                        <li>
+                            <a href="">All Clothing</a>
+                        </li>
                         <li>
                             <a href="">T-shirts</a>
                         </li>
