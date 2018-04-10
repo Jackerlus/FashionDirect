@@ -1,5 +1,19 @@
 #product-image
 {
-    height: 50%;
-    width: 50%;
+    margin-top: 15px;
+    height: 40%;
+    width: 40%;
+}
+
+#product-name
+{
+    display: block;
+}
+
+#items
+{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
