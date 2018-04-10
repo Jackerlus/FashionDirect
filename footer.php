@@ -1,3 +1,9 @@
+<style>
+    body
+    {
+        margin-bottom: 50px;
+    }
+</style>
 <link href="css/footer.css" rel="stylesheet" type="text/css"/>
 <div id="footer">
     <p>Copyright Jack Lewis, 2018</p>
