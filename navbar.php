@@ -1,7 +1,7 @@
-<!-- This is the HTML code for the navigation bar, it appears at the top of the page and serves to guide users to where they want to go. -->
-
+<!-- This is the HTML code for the navigation bar, it appears at the top of the page and guides users to where they want to go. -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/navbar.js"></script>
+
 <link href="css/navbar.css" rel="stylesheet" type="text/css"/>
 <section class="navigation" style="font-family: Arial, sans-serif">
     <div class="nav-container">
@@ -15,42 +15,42 @@
                     <a href="#!">Sale</a>
                 </li>
                 <li>
-                    <a href="#!">All Products</a>
+                    <a href="products.php?category=all">All Products</a>
                 </li>
                 <li>
                     <a href="#!">Clothing</a>
                     <ul class="nav-dropdown">
                         <li>
-                            <a href="">All Clothing</a>
+                            <a href="products.php?category=clothing">All Clothing</a>
                         </li>
                         <li>
-                            <a href="">T-shirts</a>
+                            <a href="products.php?category=tshirt">T-shirts</a>
                         </li>
                         <li>
-                            <a href="">Jumpers & Hoodies</a>
+                            <a href="products.php?category=jumper">Jumpers & Hoodies</a>
                         </li>
                         <li>
-                            <a href="">Trousers</a>
+                            <a href="products.php?category=trousers">Trousers</a>
                         </li>
                         <li>
-                            <a href="">Coats & Jackets</a>
+                            <a href="products.php?category=jacket">Coats & Jackets</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="">Shoes</a>
+                    <a href="products.php?category=shoes">Shoes</a>
                 </li>
                 <li>
-                    <a href="">Accessories</a>
+                    <a href="products.php?category=accessory">Accessories</a>
                 </li>
                 <li>
-                    <a href="">About</a>
+                    <a href="about.php">About</a>
                 </li>
                 <li>
-                    <a href="">Contact Us</a>
+                    <a href="contact.php">Contact Us</a>
                 </li>
                 <li>
-                    <a href="">News and Announcements</a>
+                    <a href="news.php">News and Announcements</a>
                 </li>
             </ul>
         </nav>

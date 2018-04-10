@@ -8,11 +8,21 @@
         ?>
     </head>
     <body>
-        <div class="container-fluid">
+    <?php
+    include("navbar.php");
+    ?>
+
+        <div id="items" class="container-fluid justify-content-center">
             <div class="row justify-content-center">
     <?php
+    $category = $_GET['category'];
     $connect = mysqli_connect('localhost', 'root', '', 'fd');
-    $query = 'SELECT * FROM products ORDER by id ASC';
+    if ($category == 'all') {
+        $query = 'SELECT * FROM products ORDER by id ASC';
+    } else {
+        $query = "SELECT * from products WHERE category = '$category'";
+    }
+
     $result = mysqli_query($connect, $query);
 
     if ($result)
@@ -23,17 +33,22 @@
             { ?>
                 <div class="col-sm-4">
                     <div style="" class="product-card">
-                        <img id="product-image" src="<?php echo $product['image'];?>" class="img-responsive" />
+                        <a href="item.php?id=<?php echo $product['id']; ?>">
+                            <img id="product-image"  src="<?php echo $product['image'];?>" class="img-responsive" />
+                        </a>
                         <a id="product-name" class="text-info" href="item.php?id=<?php echo $product['id']; ?>"><?php echo $product['name']; ?></a>
-                        <h4 class="">$ <?php echo $product['price']; ?></h4>
+                        <h4 class="">£<?php echo $product['price']; ?></h4>
                     </div>
                 </div>
-            <?php
+                <?php
             }
         }
     }
     ?>
             </div>
         </div>
+    <?php
+    include("footer.php");
+    ?>
     </body>
 </html>
