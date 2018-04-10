@@ -1,0 +1,35 @@
+@media (min-width:320px)
+{
+    #product-image
+    {
+        width: 70%;
+    }
+}
+@media (min-width:600px)
+{
+    #product-image
+    {
+        width: 45%;
+    }
+}
+
+@media (min-width:1281px)
+{
+    #product-image
+    {
+        width: 25%;
+    }
+}
+
+.product-card
+{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#product-image
+{
+    margin-top: 15px;
+}
