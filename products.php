@@ -19,8 +19,11 @@
     $connect = mysqli_connect('localhost', 'root', '', 'fd');
     if ($category == 'all') {
         $query = 'SELECT * FROM products ORDER by id ASC';
+    } else if ($category == 'clothing') {
+        $query = "SELECT * FROM products WHERE category = 'tshirt' OR category = 'trousers' OR category = 'jumper' OR
+                  category = 'jacket'";
     } else {
-        $query = "SELECT * from products WHERE category = '$category'";
+        $query = "SELECT * FROM products WHERE category = '$category'";
     }
 
     $result = mysqli_query($connect, $query);
