@@ -38,23 +38,23 @@ if ($result)
     margin-left: auto;
     margin-right: auto;">
     <select title="Size">
-        <option value="XS">XS</option>
-        <option value="S">S</option>
-        <option value="M">M</option>
-        <option value="L">L</option>
         <option value="XL">XL</option>
+        <option value="L">L</option>
+        <option value="M">M</option>
+        <option value="S">S</option>
+        <option value="XS">XS</option>
     </select>
     <select title="Quantity">
-        <option value=1>1</option>
-        <option value=2>2</option>
-        <option value=3>3s</option>
-        <option value=4>4</option>
-        <option value=5>5</option>
-        <option value=6>6</option>
-        <option value=7>7</option>
-        <option value=8>8</option>
-        <option value=9>9</option>
         <option value=10>10</option>
+        <option value=9>9</option>
+        <option value=8>8</option>
+        <option value=7>7</option>
+        <option value=6>6</option>
+        <option value=5>5</option>
+        <option value=4>4</option>
+        <option value=3>3</option>
+        <option value=2>2</option>
+        <option value=1>1</option>
     </select>
     <button style="">
         Add to cart
