@@ -1,11 +1,11 @@
+<?php
+include("header.php");
+?>
 <!DOCTYPE html>
 <html>
     <head>
         <title>All Products</title>
         <link href="css/products.css" rel="stylesheet" type="text/css"/>
-        <?php
-        include("header.php");
-        ?>
     </head>
     <body>
     <?php
@@ -15,6 +15,7 @@
         <div id="items" class="container-fluid justify-content-center">
             <div class="row justify-content-center">
     <?php
+
     $category = $_GET['category'];
     $connect = mysqli_connect('localhost', 'root', '', 'fd');
     if ($category == 'all') {
