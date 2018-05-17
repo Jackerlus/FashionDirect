@@ -6,14 +6,11 @@
 <section class="navigation" style="font-family: Arial, sans-serif">
     <div class="nav-container">
         <div class="brand">
-            <a href="http://localhost/test">Fashion Direct</a>
+            <a href="http://localhost/FashionDirect">Fashion Direct</a>
         </div>
         <nav>
             <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
             <ul class="nav-list">
-                <li>
-                    <a href="#!">Sale</a>
-                </li>
                 <li>
                     <a href="products.php?category=all">All Products</a>
                 </li>
@@ -50,7 +47,10 @@
                     <a href="contact.php">Contact Us</a>
                 </li>
                 <li>
-                    <a href="news.php">News and Announcements</a>
+                    <a href="news.php">News</a>
+                </li>
+                <li>
+                    <a href="cart.php">Your Basket</a>
                 </li>
             </ul>
         </nav>
