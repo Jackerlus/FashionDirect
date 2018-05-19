@@ -9,48 +9,42 @@
             <a href="http://localhost/FashionDirect">Fashion Direct</a>
         </div>
         <nav>
-            <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+            <div class="nav-mobile"><a id="nav-toggle" href="#!" style="text-decoration: none;"><span></span></a></div>
             <ul class="nav-list">
                 <li>
-                    <a href="products.php?category=all">All Products</a>
+                    <a href="products.php?category=all" style="text-decoration: none;">All Products</a>
                 </li>
                 <li>
-                    <a href="#!">Clothing</a>
+                    <a href="#!" style="text-decoration: none;">Clothing</a>
                     <ul class="nav-dropdown">
                         <li>
-                            <a href="products.php?category=clothing">All Clothing</a>
+                            <a href="products.php?category=clothing" style="text-decoration: none;"> All Clothing</a>
                         </li>
                         <li>
-                            <a href="products.php?category=tshirt">T-shirts</a>
+                            <a href="products.php?category=tshirt" style="text-decoration: none;">T-shirts</a>
                         </li>
                         <li>
-                            <a href="products.php?category=jumper">Jumpers & Hoodies</a>
+                            <a href="products.php?category=jumper" style="text-decoration: none;">Jumpers & Hoodies</a>
                         </li>
                         <li>
-                            <a href="products.php?category=trousers">Trousers</a>
+                            <a href="products.php?category=trousers" style="text-decoration: none;">Trousers</a>
                         </li>
                         <li>
-                            <a href="products.php?category=jacket">Coats & Jackets</a>
+                            <a href="products.php?category=jacket" style="text-decoration: none;">Coats & Jackets</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="products.php?category=shoes">Shoes</a>
+                    <a href="products.php?category=shoes" style="text-decoration: none;">Shoes</a>
                 </li>
                 <li>
-                    <a href="products.php?category=accessory">Accessories</a>
+                    <a href="products.php?category=accessory" style="text-decoration: none;">Accessories</a>
                 </li>
                 <li>
-                    <a href="about.php">About</a>
+                    <a href="contact.php" style="text-decoration: none;">Contact Us</a>
                 </li>
                 <li>
-                    <a href="contact.php">Contact Us</a>
-                </li>
-                <li>
-                    <a href="news.php">News</a>
-                </li>
-                <li>
-                    <a href="cart.php">Your Basket</a>
+                    <a href="cart.php" style="text-decoration: none;>Coats & Jackets">Your Basket</a>
                 </li>
             </ul>
         </nav>
