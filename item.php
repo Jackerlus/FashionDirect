@@ -21,7 +21,7 @@ if (isset($_GET['outOfStock']) & !empty($_GET['outOfStock'])) {
 }
 $selectedItem = $_GET['id'];
 $connect = mysqli_connect('localhost', 'root', '', 'fd');
-$query = "SELECT * FROM products WHERE id = '$selectedItem'";
+$query = "SELECT * FROM products WHERE productId = '$selectedItem'";
 $result = mysqli_query($connect, $query);
 $product = mysqli_fetch_assoc($result);
 
@@ -54,7 +54,7 @@ if ($result)
 
 ?>
 
-<form id="addToCart" method="post" action="addToCart.php?id=<?php echo $product['id'] ?>" style="text-align: center;
+<form id="addToCart" method="post" action="addToCart.php?id=<?php echo $product['productId'] ?>" style="text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;">

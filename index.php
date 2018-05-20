@@ -16,7 +16,7 @@ include("navbar.php");
         <?php
 
         $connect = mysqli_connect('localhost', 'root', '', 'fd');
-        $query = 'SELECT * FROM products ORDER by id ASC';
+        $query = 'SELECT * FROM products ORDER by productId ASC';
 
         $result = mysqli_query($connect, $query);
 
@@ -28,10 +28,10 @@ include("navbar.php");
                 { ?>
                     <div class="col-sm-4">
                         <div style="" class="product-card">
-                            <a href="item.php?id=<?php echo $product['id']; ?>">
+                            <a href="item.php?id=<?php echo $product['productId']; ?>">
                                 <img id="product-image"  src="<?php echo $product['image'];?>" class="img-responsive" />
                             </a>
-                            <a id="product-name" class="text-info" href="item.php?id=<?php echo $product['id']; ?>"><?php echo $product['name']; ?></a>
+                            <a id="product-name" class="text-info" href="item.php?id=<?php echo $product['productId']; ?>"><?php echo $product['name']; ?></a>
                             <h4 class="">£<?php echo $product['price']; ?></h4>
                         </div>
                     </div>

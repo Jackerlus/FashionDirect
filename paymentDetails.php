@@ -34,7 +34,7 @@ include("navbar.php");
     $j = 0;
 
     foreach ($cartItems as $key=>$id) {;
-        $query = "SELECT a.id, a.image, a.name, a.price FROM products a INNER JOIN product_variations b ON a.id=b.productId WHERE b.varIndex = '$id';";
+        $query = "SELECT a.productId, a.image, a.name, a.price FROM products a INNER JOIN product_variations b ON a.productId=b.productId WHERE b.varIndex = '$id';";
         $result = mysqli_query($connect, $query);
         $r = mysqli_fetch_assoc($result);
         ?>

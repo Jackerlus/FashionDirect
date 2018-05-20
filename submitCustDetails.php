@@ -42,8 +42,6 @@ $connect = mysqli_connect('localhost', 'root', '', 'fd');
 $query = "INSERT INTO customers (firstName, lastName, address, email, tel) VALUES
             (''$firstName'', ''$lastName'', ''$address'', ''$email'', ''$tel'')";
 $result = mysqli_query($connect, $query);
-
-$query = "";
 ?>
 
 <?php
