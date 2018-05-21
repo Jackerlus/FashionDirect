@@ -1,4 +1,5 @@
 <?php
+session_start();
 function sanitiseInput($input) {
     $input = trim($input);
     $input = stripslashes($input);
@@ -23,7 +24,7 @@ if (isset($_POST['address1']))
 
 if (isset($_POST['address2']))
 {
-    $address = sanitiseInput($address . ', ' . $_POST['address']);
+    $address = $address . ', ' . sanitiseInput($_POST['address2']);
 }
 
 if (isset($_POST['town'])) {
@@ -42,7 +43,17 @@ if (isset($_POST['tel'])){
 }
 
 $connect = mysqli_connect('localhost', 'root', '', 'fd');
-$query = "INSERT INTO customers (firstName, lastName, address, email, tel) VALUES
-('$firstName', '$lastName', '$address', $email, '$tel')";
+$query = "INSERT INTO customers (firstName, lastName, address, email, tel) VALUES ('$firstName', '$lastName', '$address', '$email', '$tel')";
 $result = mysqli_query($connect, $query);
+$query = "SELECT custId FROM customers WHERE firstName = '$firstName' AND lastName = '$lastName' AND address = '$address' AND email = '$email' AND tel = '$tel';";
+$result = mysqli_query($connect, $query);
+$custId = mysqli_fetch_assoc($result);
+
+$_SESSION['custId'] = $custId['custId'];
+
+echo '
+<script type="text/javascript">location.href = \'paymentDetails.php\';</script>
+';
+
+
 ?>

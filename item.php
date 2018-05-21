@@ -69,7 +69,7 @@ if ($size['size'] == "xl" || $size['size'] == "l" || $size['size'] == "m" || $si
         <option value="l">L</option>
         <option value="m">M</option>
         <option value="s">S</option>
-        <option value="xs">XS</option>
+        <option value="xs" selected>XS</option>
     </select>';
 } else if ($size['size'] <= 38 & $size['size'] >= 28) {
     echo '
@@ -79,7 +79,7 @@ if ($size['size'] == "xl" || $size['size'] == "l" || $size['size'] == "m" || $si
         <option value="34">34</option>
         <option value="32">32</option>
         <option value="30">30</option>
-        <option value="28">28</option>
+        <option value="28" selected>28</option>
     </select>';
 } else if ($size['size'] <= 12 & $size['size'] >= 3) {
     echo '
@@ -93,7 +93,7 @@ if ($size['size'] == "xl" || $size['size'] == "l" || $size['size'] == "m" || $si
         <option value="6">6</option>
         <option value="5">5</option>
         <option value="4">4</option>
-        <option value="3">3</option>
+        <option value="3" selected>3</option>
     </select>';
 }
 ?>
@@ -108,7 +108,7 @@ if ($size['size'] == "xl" || $size['size'] == "l" || $size['size'] == "m" || $si
         <option value=4>4</option>
         <option value=3>3</option>
         <option value=2>2</option>
-        <option value=1>1</option>
+        <option value=1 selected>1</option>
     </select>
     <button form="addToCart" type="submit">
         Add to cart

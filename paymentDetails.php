@@ -96,22 +96,16 @@ include("navbar.php");
 
             onAuthorize: function(data, actions) {
                 return actions.payment.execute().then(function() {
-                    <?php
-
-                    ?>
+                    location.href = "orderConfirmed.php";
                 });
             },
 
             onCancel: function(data, actions) {
-                /*
-                 * Buyer cancelled the payment
-                 */
+                location.href = "orderFailed.php";
             },
 
             onError: function(err) {
-                /*
-                 * An error occurred during the transaction
-                 */
+                location.href = "orderFailed.php";
             }
         }, '#paypal-button');
         </script>

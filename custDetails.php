@@ -105,16 +105,14 @@
                 Town/city: <input type="text" name="town" id="town" title="Town or city" required maxlength="15" pattern="[A-Za-z]+">
             </div>
             <div class="col-sm-6">
-                Post code: <input type="text" name="postCode" id="post-code" title="Post code" required maxlength="8">
+                Post code: <input type="text" name="postCode" id="post-code" title="Post code" required maxlength="8" pattern="([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([A-Za-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9]?[A-Za-z]))))\s?[0-9][A-Za-z]{2})">
             </div>
         </div>
 
         <div class="row" style="margin: 10px;">
             <div class="col-sm-6"></div>
             <div class="col-sm-6" style="margin: auto; top: 0; right: 0; bottom: 0;left: 0;">
-                <button type="submit" class="btn btn-info" style="display: block;">
-                    <a style="text-decoration: none;color: white;" href="paymentDetails.php">Payment</a>
-                </button>
+                <button type="submit" class="btn btn-info" style="display: block;">Payment</button>
             </div>
         </div>
     </form>
