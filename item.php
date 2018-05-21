@@ -10,15 +10,15 @@ include("header.php");
 <body>
 <?php
 include("navbar.php");
-
-if (isset($_GET['outOfStock']) & !empty($_GET['outOfStock'])) {
-    if ($_GET['outOfStock'] == 'true') {
-        echo '<script type="text/javascript">';
-        echo 'alert("Sorry, this item in the size you requested is out of stock, please select a different size or
-         product");';
-        echo '</script>';
-    }
-}
+//
+//if (isset($_GET['outOfStock']) & !empty($_GET['outOfStock'])) {
+//    if ($_GET['outOfStock'] == 'true') {
+//        echo '<script type="text/javascript">';
+//        echo 'alert("Sorry, this item in the size you requested is out of stock, please select a different size or
+//         product");';
+//        echo '</script>';
+//    }
+//}
 $selectedItem = $_GET['id'];
 $connect = mysqli_connect('localhost', 'root', '', 'fd');
 $query = "SELECT * FROM products WHERE productId = '$selectedItem'";
